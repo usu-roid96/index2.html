@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ゆるオシャ シフトカレンダー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ゆるオシャ シフトカレンダー 🩰</h1>
+    <button id="settings-btn">⚙️ 設定</button>
+  </header>
+
+  <main id="calendar"></main>
+
+  <section id="summary">
+    <h2>今月の給与 💰</h2>
+    <p>合計勤務時間: <span id="hours">0</span> 時間</p>
+    <p>給与合計: ¥<span id="salary">0</span></p>
+  </section>
+
+  <div id="settings-modal" class="hidden">
+    <h3>設定</h3>
+    <label>時給（円）<input id="wage" type="number" value="1200"></label>
+    <button id="close-settings">閉じる</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
